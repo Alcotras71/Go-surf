@@ -20,13 +20,22 @@ body{
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
+	background-color: #171919;
+	color: #fff;
+	text-transform: uppercase;
 }
 a{
 	display: inline-block;
 	text-decoration: none;
+	color: #fff;
 }
 
-.suptitle-left{
+.container{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.headline-left{
 	display: inline-block;
 	font-size: 22px;
 	line-height: 32px;
@@ -45,4 +54,116 @@ a{
 		left: 0;
 		top: 50%;
 	}
+}
+
+.headline-right{
+	display: inline-block;
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 7.33333px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	opacity: 0.5;
+	padding-right: 103px;
+	position: relative;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 80px;
+		height: 1px;
+		background: #fff;
+		right: 0;
+		top: 50%;
+	}
+}
+
+.title{
+	span{
+		font-size: 200px;
+		color: rgba(#fff, .02);
+		font-weight: 800;
+		position: relative;
+		display: inline-block;
+		transform: translateX(-50px);
+	}	
+	h3{
+		position: absolute;
+		top: 0;
+		right: -5px;
+		color: #fff;
+		font-size: 80px;
+		&::after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80px;
+			height: 1px;
+			background-color: $green;
+		}
+	}
+}
+
+.subtitle{
+	display: inline-block;
+	text-align: right;
+	&__head{
+		font-weight: 800;
+		font-size: 40px;
+		padding-right: 10px;
+		span{
+			font-weight: 100;
+		}
+	}
+}
+
+.descr{
+	display: inline-block;
+	&__head{
+		font-weight: 800;
+		font-size: 40px;
+		span{
+			font-weight: 100;
+		}
+	}
+}
+
+.btn{
+	font-weight: 800;
+	font-size: 40px;
+	span{
+		margin-left: 15px;
+		padding: 20px 57px 20px 17px;
+		background-color: $green;
+		display: inline-block;
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			width: 20px;
+			height: 1px;
+			background-color: #fff;
+			top: 50%;
+			left: -11px;
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 21px;
+			background-image: url(../images/main/arrow-right.svg);
+			top: 50px;
+			right: 17px;
+			transform: translateY(-95%);
+		}
+	}
+}
+
+.surf,
+.travel{
+	padding: 160px 0 120px 0;
+}
+
+.travel{
+	padding-bottom: 265px;
 }
