@@ -36,6 +36,7 @@ a{
 }
 
 .headline-left{
+	margin-bottom: 8px;
 	display: inline-block;
 	font-size: 22px;
 	line-height: 32px;
@@ -57,6 +58,7 @@ a{
 }
 
 .headline-right{
+	margin-bottom: 8px;
 	display: inline-block;
 	font-size: 22px;
 	line-height: 32px;
@@ -160,10 +162,87 @@ a{
 }
 
 .surf,
-.travel{
+.holder{
 	padding: 160px 0 120px 0;
 }
 
-.travel{
+.holder{
 	padding-bottom: 265px;
+}
+
+.sleep{
+	padding-top: 100px;
+}
+
+
+.quantity {
+	display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  display: block;
+	border: none;
+	background-color: transparent;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 36px;
+	color: #fff;		
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50px;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+	right: 5px;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+	right: 30px;
+}
+
+.letterspacing{
+	letter-spacing: 6px;
+}
+
+.star-list{
+	li{
+		display: inline-block;
+		& + li{
+			margin-left: -30px;
+		}
+	}
 }
