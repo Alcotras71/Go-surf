@@ -1,4 +1,5 @@
 @media (max-width: 1440px) {
+	// Header-------------------
 	.header{
 		&__aside-logo{
 			img{
@@ -26,13 +27,20 @@
 			left: 130px;
 		}
 	}
-
 	.aside-menu{
 		padding-top: 20px;
 	}
+
+	// Surf---------------------
+	.surf-box__inner{
+		min-height: 650px;
+	}
 }
 
+
+
 @media (max-width: 1366px) {
+	// Header-------------------
 	.header__aside{
 		position: absolute;
 		border-right: none;
@@ -67,20 +75,21 @@
 		left: 20px;
 		bottom: 20px;
 	}
-
 	.slider-item__info-title{
 		font-size: 65px;
 	}
 }
 
+
+
 @media (max-width: 1340px) {
+	// Header-------------------
 	.header__map{
 		svg{
 			width: 500px;
 			height: 250px;
 		}
 	}
-
 	.slider-arrows{
 		top: 20px;
 		right: 20px;
@@ -90,7 +99,97 @@
 	}
 }
 
+
+
+@media (max-width: 1250px) {
+	// Surf--------------------
+	.slider-map{
+		max-width: 1000px;
+		min-height: 531px;
+	}
+	.slider-map .slick-list{
+		min-height: 515px;
+	}
+	.slider-points{
+		&__circle{
+			width: 20px;
+			height: 20px;
+		}
+		&__content{
+			height: 180px;
+			width: 240px;
+			padding: 10px 20px 0px 20px;
+			&::before{
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				bottom: -23px;
+			}
+		}
+		&--1{
+			top: 275px;
+		}
+		&--2{
+			top: 210px;
+		}
+		&--3{
+			top: 265px;
+			left: 26%;
+		}
+		&--4{
+			top: 395px;
+		}
+		&--5{
+			top: 190px;
+			left: 45%;
+		}
+		&--6{
+			top: 460px;
+		}
+		&--7{
+			top: 320px;
+		}
+		&--8{
+			top: 415px;
+			.slider-points__content{
+				transform: translateX(-217px);
+				&::before{
+					right: 3px;
+				}
+			}
+		}
+	}
+	.surf{
+		background-size: 10%;
+	}
+
+	// GLOBAL===================
+	.title{
+		span{
+			font-size: 180px;
+		}	
+		h3{
+			font-size: 70px;
+		}
+	}
+	.subtitle{
+		&__head{
+			font-size: 35px;
+		}
+	}
+	.headline-left{
+		font-size: 17px;
+		line-height: 30px;
+		padding-left: 93px;
+		&::before{
+			width: 70px;
+		}
+	}
+}
+
+
+
 @media (max-width: 1040px) {
+	// Header-------------------
 	.header__arrows{
 		display: none;
 	}
@@ -118,7 +217,6 @@
 			transform: translateX(0);
 		}
 	}
-
 	.slider-item__info{
 		position: absolute;
 		right: 20px;
@@ -147,7 +245,6 @@
 			width: 50px;
 		}
 	}
-	
 	.slider-dots,
 	.slick-dots{
 		right: 0;
@@ -158,7 +255,6 @@
 	.slick-dots{
 		bottom: 10px;
 	}
-	
 	.dots-box{
 		width: 125px;
 		&__number{
@@ -168,24 +264,120 @@
 			line-height: 18px;
 		}
 	}
-
 	.menu-btn{
 		display: flex;
 	}
+
+	// Surf---------------------
+	.slider-map{
+		background-image: none;
+		max-width: 100%;
+		min-height: 280px;
+		.slick-track{
+			min-height: 280px;
+		}
+		.slick-list{
+			min-height: 280px;
+		}
+	}
+	.slider-points{
+		position: static;
+		&__circle{
+			display: none;
+		}
+		&__content{
+			margin-left: 50px;
+			display: block;
+			transform: translateX(0);
+			&::before{
+				display: none;
+			}
+		}
+		&--8{
+			.slider-points__content{
+				transform: translateX(0);
+			}
+		}
+	}
+	.surf__subtitle{
+		padding-right: 20px;
+	}
+	.surf{
+		background-size: 15%;
+	}
 }
 
+
+
 @media (max-width: 960px) {
+	// Header-------------------
 	.slider-dots,
 	.slick-dots{
 		display: none;
 	}
+	.slick-dots{
+		li{
+			display: none;
+		}
+	}
 }
+
+
+
+@media (max-width: 900px) {
+	.slider-points__content{
+		width: 4%;
+	}
+}
+
+
 
 @media (max-width: 767px) {
 
 }
 
+
+
+@media (max-width: 680px) {
+	// Surf----------------------
+	.slider-points__content{
+		&-row{
+			padding-bottom: 11px;
+		}
+	}
+
+	.surf{
+		background-size: 20%;
+	}
+
+	// GLOBAL====================
+	.title{
+		span{
+			font-size: 100px;
+			padding-bottom: 80px;
+		}
+	}
+}
+
+
+
+@media (max-width: 500px) {
+// GLOBAL=====================
+	.headline-left{
+		letter-spacing: 2.3px;
+	}
+	.subtitle{
+		&__head{
+			font-size: 32px;
+			padding-right: 0;
+		}
+	}
+}
+
+
+
 @media (max-width: 460px) {
+	// Header-------------------
 	.header__aside{
 		display: block;
 		text-align: center;
@@ -215,13 +407,25 @@
 	.header__title{
 		display: none;
 	}
-
 	.slider-item__info-title{
 		font-size: 50px;
 	}
 }
 
+
+@media (max-width: 420px) {
+	// Surf--------------------
+	.slider-map .slider-points__content,
+	.slider-map .slick-current .slider-points__content {
+		width: 250px;
+		padding: 28px 15px 0;
+	}
+}
+
+
+
 @media (max-width: 320px) {
+	// Header-------------------
 	.headline-left{
 		font-size: 14px;
 		line-height: 15px;
