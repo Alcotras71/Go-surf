@@ -435,6 +435,10 @@
 	&--1{
 		position: absolute;
 		top: 340px;
+		left: 30px;
+		.slider-points__circle {
+			box-shadow: 0px 0px 20px rgba(74,246,205,0.837777);
+		}
 		.slider-points__content{
 			transform: translateX(0);
 			z-index: 10;

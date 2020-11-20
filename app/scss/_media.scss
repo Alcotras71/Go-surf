@@ -184,6 +184,70 @@
 			width: 70px;
 		}
 	}
+	.headline-right{
+		font-size: 17px;
+		line-height: 30px;
+		padding-right: 93px;
+		&::before{
+			width: 70px;
+		}
+	}
+}
+
+
+@media (max-width: 1200px) {
+	// Travel--------------------
+	.holder-slider{
+		&__descr {
+			padding: 160px 0 0 20px;
+			background-size: contain;
+			background-position: right -119px;
+		}
+		&__info{
+			display: block;
+			padding-top: 30px;
+			&-subtitle{
+				position: static;
+				transform: rotate(0);
+				height: auto;
+				width: auto;
+				text-align-last: left;
+				padding-bottom: 10px;
+			}
+			&-item{
+				min-height: auto;
+				margin-bottom: 25px;
+				position: relative;
+				padding-left: 20px;
+			}
+			&-title{
+				padding-left: 0;
+			}
+			&-title .holder-pricing__span{
+				position: static;
+				display: block;
+				text-align: left;
+				padding-top: 15px;	
+				padding-left: 10px;
+			}
+		}
+	}
+	.holder{
+		background-position: right bottom 80px;
+	}
+	.holder {
+		.title{
+			span{
+				padding-bottom: 0;
+			}
+		}
+	}
+	
+	
+	// GLOBAL====================
+	.surf, .holder{
+		padding: 70px 0 50px;
+	}
 }
 
 
@@ -234,15 +298,6 @@
 			font-size: 55px;
 			line-height: 55px;
 			margin-bottom: 20px;
-		}
-	}
-
-	.headline-left{
-		font-size: 16px;
-		line-height: 18px;
-		padding-left: 65px;
-		&::before{
-			width: 50px;
 		}
 	}
 	.slider-dots,
@@ -305,6 +360,24 @@
 	.surf{
 		background-size: 15%;
 	}
+
+	// GLOBAL========================
+	.headline-left{
+		font-size: 16px;
+		line-height: 18px;
+		padding-left: 65px;
+		&::before{
+			width: 50px;
+		}
+	}
+	.headline-right{
+		font-size: 16px;
+		line-height: 18px;
+		padding-right: 65px;
+		&::before{
+			width: 50px;
+		}
+	}
 }
 
 
@@ -345,9 +418,22 @@
 			padding-bottom: 11px;
 		}
 	}
-
 	.surf{
 		background-size: 20%;
+	}
+	.surf__slider .slider-arrows{
+		top: 20px;
+	}
+	.surf__slider{
+		padding-top: 65px;
+	}
+
+	// Travel
+	.holder-slider__subtitle{
+		padding: 60px 20px 0 0;
+	}
+	.holder-slider__head{
+		min-height: 720px;
 	}
 
 	// GLOBAL====================
@@ -360,10 +446,37 @@
 }
 
 
+@media (max-width: 600px) {
+	.holder-slider__descr {
+   	background-image: none !important;
+	}
+}
+
+
 
 @media (max-width: 500px) {
+// Travel---------------------
+.descr__head{
+	font-size: 32px;
+}
+.holder-slider{
+	&__descr{
+		padding-top: 200px;
+	}
+	&__info-title{
+		font-size: 32px;
+	}
+	&__info-subtitle{
+		font-size: 16px;
+		padding-bottom: 0;
+	}
+}
+
 // GLOBAL=====================
 	.headline-left{
+		letter-spacing: 2.3px;
+	}
+	.headline-right{
 		letter-spacing: 2.3px;
 	}
 	.subtitle{
@@ -410,7 +523,14 @@
 	.slider-item__info-title{
 		font-size: 50px;
 	}
+
+	// Travel
+	.holder{
+		background-size: 200px;
+		background-position: right bottom 150px;
+	}
 }
+
 
 
 @media (max-width: 420px) {
@@ -419,6 +539,32 @@
 	.slider-map .slick-current .slider-points__content {
 		width: 250px;
 		padding: 28px 15px 0;
+	}
+
+	// GLOBAL==================
+	.btn{
+		margin-top: 20px;
+		font-size: 32px;
+		span{
+			margin-left: 0;
+			&::before{
+				left: -8px;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 340px) {
+	// GLOBAL===================
+	.title{
+		h3{
+			font-size: 60px;
+		}
+		span{
+			font-size: 85px;
+		}
 	}
 }
 
@@ -430,6 +576,14 @@
 		font-size: 14px;
 		line-height: 15px;
 		padding-left: 45px;
+		&::before{
+			width: 35px;
+		}
+	}
+	.headline-right{
+		font-size: 14px;
+		line-height: 15px;
+		padding-right: 45px;
 		&::before{
 			width: 35px;
 		}
