@@ -514,6 +514,16 @@
 	}
 }
 
+.sleep{
+	.holder-slider__descr{
+		min-height: 420px;
+		margin-top: -255px;
+	}
+	.holder-slider__info {
+    padding-top: 0px;
+}
+}
+
 .holder-slider{
 	&__head{
 		background-repeat: no-repeat;
@@ -632,7 +642,7 @@
 			}
 		}
 		&-content{
-			padding-left: 150px;
+			padding-left: 135px;
 			display: flex;
 			align-items: flex-end;
 		}
